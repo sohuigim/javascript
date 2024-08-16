@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden; /* 컨텐츠가 바디를 벗어나지 않도록 설정 */
+}
+
+.todo-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px; /* 전체 컨테이너 크기를 적절히 조정 */
+}
+
+header {
+    background-color: black; /* 헤더 배경색 검은색으로 설정 */
+    padding: 10px;
+    border-radius: 5px 5px 0 0; /* 상단 모서리 둥글게 */
+    margin-bottom: 20px; /* 헤더와 내용 사이 여백 추가 */
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em; /* 제목 크기 조정 */
+    color: white; /* 흰색 텍스트 */
+    text-align: left;
+}
+
+p {
+    font-size: 1em; /* 설명 텍스트 크기 조정 */
+    text-align: left;
+    margin-bottom: 15px; /* 여백 조정 */
+    padding: 10px;
+}
+
+.input-container {
+    display: flex;
+}
+
+input {
+    width: calc(100% - 60px); /* 입력 필드의 크기를 적절히 조정 */
+    padding: 10px; /* 패딩을 적절하게 조정 */
+    font-size: 1em; /* 텍스트 크기 조정 */
+    border: 1px solid #ddd; /* 테두리 추가 */
+    border-right: none; /* 오른쪽 테두리 제거하여 버튼과 연결 */
+    border-radius: 5px 0 0 5px; /* 왼쪽만 둥글게 */
+}
+
+button {
+    width: 60px; /* 버튼 너비를 고정 */
+    padding: 10px; /* 버튼 패딩 조정 */
+    background-color: black; /* 버튼 배경색 검은색으로 변경 */
+    color: white;
+    border: 1px solid black; /* 테두리 검은색 */
+    border-radius: 0 5px 5px 0; /* 오른쪽만 둥글게 */
+    font-size: 1em; /* 버튼 텍스트 크기 조정 */
+    cursor: pointer;
+    text-align: center; /* 텍스트를 중앙 정렬 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+button:hover {
+    background-color: #333333; /* 호버 시 밝은 검은색 */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; /* 리스트 아이템 패딩 조정 */
+    font-size: 1em; /* 리스트 아이템 텍스트 크기 */
+    border: 1px solid #ddd;
+}
+
+.delete-button {
+    background-color: transparent; /* 배경색 투명으로 설정 */
+    border: none;
+    padding: 5px; /* 삭제 버튼 크기 조정 */
+    cursor: pointer;
+    color: black; /* 텍스트 색상 검정으로 변경 */
+    font-size: 0.9em; /* 삭제 버튼 텍스트 크기 조정 */
+}
+
+.delete-button:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}
